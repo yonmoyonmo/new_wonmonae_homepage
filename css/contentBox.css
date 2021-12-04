@@ -18,7 +18,19 @@
   width: 18vh;
   height: 18vh;
   margin: 1vh;
+  transition: transform 15s;
   /* background-color: rgb(61, 61, 61); */
+}
+
+.buttonImage:hover {
+  transform: rotate(1080deg);
+}
+
+#wonmonaeLogo {
+  transition: transform 3s;
+}
+#wonmonaeLogo:hover {
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 800px) {
