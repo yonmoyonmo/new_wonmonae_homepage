@@ -3,6 +3,15 @@ html {
   height: 100vh;
 }
 
+@font-face {
+  font-family: "DungGeunMo";
+  src: url(./DungGeunMo.ttf) format("truetype");
+}
+
+body {
+  font-family: DungGeunMo;
+}
+
 ul {
   list-style: none;
 }

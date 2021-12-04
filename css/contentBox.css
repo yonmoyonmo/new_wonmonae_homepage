@@ -7,7 +7,7 @@
 }
 
 .contentBox .contentItem {
-  background-color: azure;
+  background-color: rgb(181, 181, 181);
   margin: 20px;
   padding: 20px;
   text-align: center;
@@ -15,42 +15,38 @@
 }
 
 .buttonImage {
-  width: 18vh;
-  height: 18vh;
+  width: 25vh;
+  height: 25vh;
   margin: 1vh;
   transition: transform 15s;
   /* background-color: rgb(61, 61, 61); */
 }
 
 .buttonImage:hover {
-  transform: rotate(1080deg);
+  transform: rotate(360deg);
 }
 
-#wonmonaeLogo {
-  transition: transform 3s;
-}
-#wonmonaeLogo:hover {
-  transform: rotate(180deg);
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 790px) {
   .contentBox {
     height: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1.5fr 8.5fr;
+    grid-template-rows: 2fr 8fr;
   }
 
   .contentBox .contentItem {
-    background-color: azure;
     margin: 10px;
     padding: 10px;
   }
 
   .buttonImage {
-    width: 60px;
-    height: 60px;
-    margin: auto;
-    /* background-color: rgb(151, 100, 175); */
+    width: 70px;
+    height: 70px;
+    transition: transform 1.5s;
+    /* background-color: rgb(61, 61, 61); */
+  }
+
+  .buttonImage:hover {
+    transform: rotate(360deg);
   }
 }
