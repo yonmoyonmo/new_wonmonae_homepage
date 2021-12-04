@@ -1,0 +1,45 @@
+.contentBox {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 1.5fr 8.5fr;
+  background-color: aquamarine;
+}
+
+.contentBox .contentItem {
+  background-color: azure;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.buttonImage {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(61, 61, 61);
+}
+
+@media screen and (max-width: 800px) {
+  .contentBox {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1.5fr 8.5fr;
+    background-color: aquamarine;
+  }
+
+  .contentBox .contentItem {
+    background-color: azure;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .buttonImage {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(151, 100, 175);
+  }
+}
