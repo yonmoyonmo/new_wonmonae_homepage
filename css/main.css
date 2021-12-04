@@ -14,7 +14,7 @@ a {
 
 body {
   margin: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(181, 181, 181);
   /* background-image: url("../images/windowFrame.png"); */
   /* background-size: 100vw 100vh; */
 }
@@ -29,7 +29,7 @@ canvas {
 }
 
 .container {
-  background-color: rgb(201, 217, 247);
+  background-color: rgb(255, 255, 255);
   width: 90%;
   height: 90vh;
   margin-left: 5vw;

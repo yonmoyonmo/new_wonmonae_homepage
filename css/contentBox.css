@@ -3,7 +3,7 @@
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: 2fr 8fr;
-  background-color: aquamarine;
+  background-color: rgb(181, 181, 181);
 }
 
 .contentBox .contentItem {
@@ -18,7 +18,7 @@
   width: 18vh;
   height: 18vh;
   margin: 1vh;
-  background-color: rgb(61, 61, 61);
+  /* background-color: rgb(61, 61, 61); */
 }
 
 @media screen and (max-width: 800px) {
@@ -27,7 +27,6 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1.5fr 8.5fr;
-    background-color: aquamarine;
   }
 
   .contentBox .contentItem {
@@ -40,6 +39,6 @@
     width: 60px;
     height: 60px;
     margin: auto;
-    background-color: rgb(151, 100, 175);
+    /* background-color: rgb(151, 100, 175); */
   }
 }

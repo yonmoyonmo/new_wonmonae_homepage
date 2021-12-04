@@ -1,8 +1,11 @@
 import { GlowParticle } from "./glowParticle.js";
 
 const COLORS = [
-  { r: 143, g: 255, b: 129 },
-  { r: 87, g: 69, b: 232 },
+  { r: 129, g: 178, b: 235 },
+  { r: 253, g: 185, b: 212 },
+  { r: 129, g: 178, b: 235 },
+  { r: 253, g: 185, b: 212 },
+  { r: 129, g: 178, b: 235 },
 ];
 
 class BackG {
@@ -13,10 +16,10 @@ class BackG {
 
     this.pixelRatio = window.devicePixelRatio > 1 ? 2 : 1;
 
-    this.totalParticles = 2;
+    this.totalParticles = 5;
     this.particles = [];
-    this.maxRadius = 900;
-    this.minRadius = 400;
+    this.maxRadius = 600;
+    this.minRadius = 300;
 
     window.addEventListener("resize", this.resize.bind(this), false);
     this.resize();
