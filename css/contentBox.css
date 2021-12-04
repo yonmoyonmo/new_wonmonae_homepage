@@ -1,7 +1,8 @@
 .contentBox {
+  height: 100%;
   display: grid;
   grid-auto-rows: auto;
-  grid-template-columns: 1.5fr 8.5fr;
+  grid-template-columns: 2fr 8fr;
   background-color: aquamarine;
 }
 
@@ -10,13 +11,13 @@
   margin: 20px;
   padding: 20px;
   text-align: center;
+  overflow: scroll;
 }
 
 .buttonImage {
-  width: 150px;
-  height: 150px;
-  margin: 10px;
-  padding: 10px;
+  width: 18vh;
+  height: 18vh;
+  margin: 1vh;
   background-color: rgb(61, 61, 61);
 }
 
@@ -36,10 +37,9 @@
   }
 
   .buttonImage {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    padding: 5px;
+    width: 60px;
+    height: 60px;
+    margin: auto;
     background-color: rgb(151, 100, 175);
   }
 }

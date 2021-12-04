@@ -13,16 +13,26 @@ a {
 }
 
 body {
-  background-color: rgb(104, 124, 168);
+  margin: 0;
+  background-color: rgb(255, 255, 255);
   /* background-image: url("../images/windowFrame.png"); */
-  background-size: 100vw 100vh;
+  /* background-size: 100vw 100vh; */
+}
+
+canvas {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .container {
   background-color: rgb(201, 217, 247);
-  width: 94%;
+  width: 90%;
   height: 90vh;
-  margin-left: 3vw;
+  margin-left: 5vw;
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
