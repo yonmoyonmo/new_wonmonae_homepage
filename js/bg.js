@@ -18,8 +18,8 @@ class BackG {
 
     this.totalParticles = 5;
     this.particles = [];
-    this.maxRadius = 900;
-    this.minRadius = 300;
+    this.maxRadius = 700;
+    this.minRadius = 400;
 
     window.addEventListener("resize", this.resize.bind(this), false);
     this.resize();

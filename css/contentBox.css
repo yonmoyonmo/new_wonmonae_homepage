@@ -3,27 +3,56 @@
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: 2fr 8fr;
-  background-color: rgb(181, 181, 181);
 }
 
-.contentBox .contentItem {
-  background-color: rgb(181, 181, 181);
+.contentItem {
+  background-color: rgba(181, 181, 181, 0);
+  border-radius: 20px;
   margin: 20px;
   padding: 20px;
   text-align: center;
   overflow: scroll;
 }
 
+.tooltip {
+  display: inline;
+}
+
+.contentBox .contentItem p {
+  background-color: rgba(181, 181, 181, 0.4);
+  line-height: 1.7rem;
+  letter-spacing: 0.2rem;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
 .buttonImage {
-  width: 25vh;
-  height: 25vh;
-  margin: 1vh;
-  transition: transform 15s;
-  /* background-color: rgb(61, 61, 61); */
+  width: 20vh;
+  height: 20vh;
+  margin-bottom: 50px;
+  transition: transform 1.5s;
 }
 
 .buttonImage:hover {
-  transform: rotate(360deg);
+  transform: rotate(45deg);
+}
+
+.tooltip .tooltipText {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(181, 181, 181, 0.5);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
 }
 
 @media screen and (max-width: 790px) {
@@ -31,7 +60,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 2fr 8fr;
+    grid-template-rows: 1.5fr 8fr;
   }
 
   .contentBox .contentItem {
@@ -43,7 +72,6 @@
     width: 70px;
     height: 70px;
     transition: transform 1.5s;
-    /* background-color: rgb(61, 61, 61); */
   }
 
   .buttonImage:hover {
