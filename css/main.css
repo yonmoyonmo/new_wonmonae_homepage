@@ -35,13 +35,3 @@ canvas {
   top: 0;
   z-index: -1;
 }
-
-.container {
-  background-color: transparent;
-  position: relative;
-  width: 97%;
-  height: 90vh;
-  margin-left: 1.5vw;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-}

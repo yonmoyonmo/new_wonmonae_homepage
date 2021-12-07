@@ -1,4 +1,14 @@
+.container {
+  background-color: transparent;
+  /* background-color: black; */
+  width: 97%;
+  height: 90vh;
+  margin-left: 1.5vw;
+  margin-top: 5vh;
+}
+
 .contentBox {
+  /* background-color: rgb(105, 100, 100); */
   height: 100%;
   display: grid;
   grid-auto-rows: auto;
@@ -6,7 +16,7 @@
 }
 
 .contentItem {
-  background-color: rgba(181, 181, 181, 0);
+  background-color: transparent;
   border-radius: 20px;
   margin: 20px;
   padding: 20px;
@@ -19,7 +29,7 @@
 }
 
 .contentBox .contentItem p {
-  background-color: rgba(181, 181, 181, 0.4);
+  background-color: rgb(224, 224, 224);
   line-height: 1.7rem;
   letter-spacing: 0.2rem;
   border-radius: 10px;
@@ -40,11 +50,11 @@
 .tooltip .tooltipText {
   visibility: hidden;
   width: 120px;
-  background-color: rgba(181, 181, 181, 0.5);
-  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(255, 255, 255);
   text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
+  border-radius: 10px;
+  padding: 5px;
 
   /* Position the tooltip */
   position: absolute;
@@ -56,25 +66,36 @@
 }
 
 @media screen and (max-width: 1100px) {
+  .container {
+    background-color: transparent;
+    /* background-color: black; */
+    width: 97%;
+    height: 90vh;
+    margin-left: 1.5vw;
+    margin-top: 1.5vh;
+  }
+
   .contentBox {
-    height: 98%;
-    display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1.5fr 8fr;
   }
 
   .contentBox .contentItem {
-    margin: 10px;
+    margin: 0px;
     padding: 10px;
   }
 
   .buttonImage {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     transition: transform 1.5s;
   }
 
   .buttonImage:hover {
     transform: rotate(360deg);
+  }
+
+  .tooltip:hover .tooltipText {
+    visibility: hidden;
   }
 }
