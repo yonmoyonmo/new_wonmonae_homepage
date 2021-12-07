@@ -4,7 +4,7 @@
   width: 97%;
   height: 90vh;
   margin-left: 1.5vw;
-  margin-top: 5vh;
+  margin-top: 1.5vh;
 }
 
 .contentBox {
@@ -22,14 +22,15 @@
   padding: 20px;
   text-align: center;
   overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
 }
-
-.tooltip {
-  display: inline;
+.contentItem::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 
 .contentBox .contentItem p {
-  background-color: rgb(224, 224, 224);
+  background-color: rgba(181, 181, 181, 1);
   line-height: 1.7rem;
   letter-spacing: 0.2rem;
   border-radius: 10px;
@@ -37,9 +38,16 @@
 }
 
 .buttonImage {
-  width: 20vh;
-  height: 20vh;
-  margin-bottom: 50px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  transition: transform 1.5s;
+}
+
+#wonmonaeLogo {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 40px;
   transition: transform 1.5s;
 }
 
@@ -47,17 +55,28 @@
   transform: rotate(45deg);
 }
 
-.tooltip .tooltipText {
+#wonmonaeLogo:hover {
+  transform: rotate(360deg);
+}
+
+.tooltip {
+  display: block;
+}
+
+.tooltipText {
   visibility: hidden;
   width: 120px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: transparent;
   color: rgb(255, 255, 255);
   text-align: center;
   border-radius: 10px;
   padding: 5px;
+  border: 1px solid rgb(255, 255, 255);
 
   /* Position the tooltip */
-  position: absolute;
+  position: fixed;
+  left: 6.7vw;
+  top: 2vh;
   z-index: 1;
 }
 
@@ -77,7 +96,7 @@
 
   .contentBox {
     grid-template-columns: 100%;
-    grid-template-rows: 1.5fr 8fr;
+    grid-template-rows: 1.5fr 8.5fr;
   }
 
   .contentBox .contentItem {
@@ -86,8 +105,18 @@
   }
 
   .buttonImage {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    transition: transform 1.5s;
+  }
+
+  #wonmonaeLogo {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 0px;
+    margin-right: 10px;
     transition: transform 1.5s;
   }
 
@@ -97,5 +126,9 @@
 
   .tooltip:hover .tooltipText {
     visibility: hidden;
+  }
+  .tooltip {
+    text-align: center;
+    display: inline;
   }
 }
