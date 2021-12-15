@@ -1,3 +1,3 @@
 # new wonmonae homePage!
 
-let's go with vanilllllllllaaaaaaaaaaaaaaaa!
+simple static website
