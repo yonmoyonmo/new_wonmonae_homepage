@@ -30,6 +30,7 @@ figcaption {
   font-size: 1rem;
   padding: 5px;
   line-height: 1.5rem;
+  text-align: left;
 }
 .experimentTitle {
   font-size: 1.5rem;
