@@ -5,12 +5,7 @@
   border-radius: 20px;
   margin: 1rem;
 }
-.labtitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
+
 .experimentVisualMaterials {
   display: flex;
   flex-direction: row;
@@ -39,6 +34,12 @@ figcaption {
 .experimentTitle {
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
+}
+#korean {
+  font-size: 0.9rem;
+}
+#english {
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 1100px) {

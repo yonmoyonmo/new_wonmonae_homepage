@@ -48,6 +48,14 @@
   font-weight: normal;
 }
 
+#korean {
+  font-size: 1rem;
+}
+
+#english {
+  font-size: 1.1rem;
+}
+
 @media screen and (max-width: 1100px) {
   .appsContent {
     display: flex;
