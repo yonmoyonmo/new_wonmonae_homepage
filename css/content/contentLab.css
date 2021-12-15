@@ -1,6 +1,9 @@
 .OneExperimentUnit {
   border: 1px rgb(181, 181, 181) solid;
-  box-shadow: -2px 3px 10px rgb(181, 181, 181);
+  box-shadow: 0px 5px 15px rgb(100, 100, 100);
+  background-color: rgba(181, 181, 181, 0.4);
+  border-radius: 20px;
+  margin: 1rem;
 }
 .labtitle {
   display: flex;

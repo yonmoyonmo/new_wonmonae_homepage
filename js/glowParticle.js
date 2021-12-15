@@ -7,8 +7,8 @@ export class GlowParticle {
     this.radius = radius;
     this.rgb = rgb;
 
-    this.vx = Math.random() * 4;
-    this.vy = Math.random() * 4;
+    this.vx = Math.random() * 5;
+    this.vy = Math.random() * 5;
 
     this.sinValue = Math.random();
   }
@@ -41,7 +41,7 @@ export class GlowParticle {
     const g = ctx.createRadialGradient(
       this.x,
       this.y,
-      this.radius * 0.001,
+      this.radius * 0.1,
       this.x,
       this.y,
       this.radius
