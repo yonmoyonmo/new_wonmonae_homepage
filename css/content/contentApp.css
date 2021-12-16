@@ -36,7 +36,9 @@
   width: 120px;
   height: 50px;
 }
-
+.appDescription {
+  text-align: left;
+}
 .appDescription p {
   font-size: 1rem;
   padding: 5px;
