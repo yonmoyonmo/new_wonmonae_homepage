@@ -18,11 +18,13 @@
   height: 300px;
   box-shadow: -2px 3px 10px rgb(66, 66, 66);
 }
+
 .experimentImage1x1 {
   width: 400px;
   height: 400px;
   box-shadow: -2px 3px 10px rgb(66, 66, 66);
 }
+
 figcaption {
   font-size: 0.8rem;
 }
@@ -60,11 +62,13 @@ figcaption {
     height: 240px;
     box-shadow: -2px 3px 10px rgb(66, 66, 66);
   }
+
   .experimentImage1x1 {
-    width: 320;
+    width: 320px;
     height: 320px;
     box-shadow: -2px 3px 10px rgb(66, 66, 66);
   }
+
   .experimentDescription p {
     font-size: 0.8rem;
     padding: 5px;
